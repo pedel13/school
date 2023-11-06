@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>liverando</title>
+    <link rel="icon" type="image/x-icon" href="./img/logo.png">
+    <link rel="stylesheet" href="./stylesheet.css">
+    <script src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Sawarabi+Mincho&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="headLine">
+            <div><img src="./img/logo.png" alt="logo"><h1>Lieferando</h1></div>
+            <div></div>
+        </div>
+        <div class="titleImg"></div>
+    </header>
+
+    <div>
+
+        <div class="index">
+            <h1>Pizzeria Italia</h1>
+            <div class="assessment"><img src="./img/bewertung.png" alt="assessment">
+                <p>156 Bewertungen</p>
+            </div>
+            <p class="assessment">Versandskostenfrei ab 60.-CHF</p>
+            <h3 class="menu">Beliebte Gerichte</h3>
+            <div class="spaseLine"></div>
+            <div class="menu" id="menus">
+                <div>
+                    <h3>Pizza Margherita</h3>
+                    <p>Tomatensauce, Mozzarella, Oregano, Basilikum, Oliven </p>
+                    <h3>19.90 CHF</h3>
+                </div>
+                <div class="addMenu menuImgMargarita" onclick="add(0)"><img src="./img/plus.png" alt="add"></div>
+            </div>
+            <div class="menu">
+                <div>
+                    <h3>Pizza Prosciutto</h3>
+                    <p>Tomatensauce, Mozzarella, Oregano, Basilikum, schinken </p>
+                    <h3>20.60 CHF</h3>
+                </div>
+                <div class="addMenu menuImgprosciutto" onclick="add(1)"><img src="./img/plus.png" alt="add"></div>
+            </div>
+            <div class="menu">
+                <div>
+                    <h3>Pizza Salami</h3>
+                    <p>Tomatensauce, Mozzarella, Oregano, Basilikum, Salami</p>
+                    <h3>21.40 CHF</h3>
+                </div>
+                <div class="addMenu menuImgSalami" onclick="add(2)"><img src="./img/plus.png" alt="add"></div>
+            </div>
+        </div>
+        <div class="basket none" id="baskets">
+            <h3 class="paddingTop16">Warenkorb</h3>
+            <div class="delivery">
+                <p class="paddingTop16">Lieferung</p>
+                <p>25-50 min</p>
+            </div>
+            <div class="spaseLine"></div>
+            <div id="filingBasket" class="price filingBasket">
+            </div>
+            <div class="spaseLine"></div>
+            <div class="price">
+                <p>Versand</p>
+                <p id="delivery">5.00</p>
+            </div>
+            <div class="spaseLine"></div>
+            <div class="price">
+                <p>Total</p>
+                <p id="total">0.00</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

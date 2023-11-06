@@ -1,0 +1,263 @@
+body {
+    margin: 0px;
+    font-family: 'Sawarabi Mincho', serif;
+}
+h1{
+    font-size: 48px;
+    margin: 0px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+h3{
+    font-size: 32px;
+    margin: 0px;
+}
+p{
+    font-size: 24px;
+    margin: 0px;
+}
+.headLine{
+    background-color: #f15d00;
+    height: 64px;
+    width: 100vw;
+    position:fixed;
+    display: flex;
+    align-items: center;
+}
+.headLine h1{
+    padding-bottom: 0px;
+    padding-top: 0px; 
+}
+.headLine div{
+    display: flex;
+    align-items: center;
+    padding-left: 24px;
+}
+.headLine img{
+    height: 32px;
+padding-right: 24px;
+font-family: 'Kaushan Script'cursive;
+}
+.titleImg{
+    height: 32vh;
+    background-image: url(./img/pizza.jpg);
+    background-size: cover;
+}
+
+.index {
+    display: flex;
+    padding-right: 80px;
+    padding-left: 80px;
+    flex-direction: column;
+}
+.menuImgMargarita {
+    background-image: url(./img/pizzaMargarita.jpg);
+}
+.menuImgprosciutto{ 
+    background-image: url(./img/pizzaProguto.jpg);
+}
+.menuImgSalami{
+    background-image: url(./img/pizzaSalami.jpg);
+}
+.addMenu{
+    width: 104px;
+    height: 104px;   
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    background-size: cover;
+}
+.addMenu img{
+    width: 44px;
+}
+.addMenu:hover{
+    cursor: pointer;
+    filter: contrast(.6);
+}
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 64px;
+    gap: 16px;
+}
+.assessment{
+    display: flex;
+    align-items: center;
+    padding-bottom: 16px;
+    gap: 16px;
+}
+.assessment img{
+    height: 96px;
+}
+.price{
+    display: flex;
+    justify-content: space-between;
+    width: 88%;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    font-weight: bold;
+}
+.basket{
+    position: fixed;
+    right: 0px;
+    top: 64px;
+    width: 400px;
+    background-color: rgba(255, 255, 255, 0.7);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y:scroll; height:45vh;
+}
+.delivery{
+    padding-bottom: 16px;
+}
+.crowd{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+.plus {
+width: 20px;
+height: 20px;
+background-size: cover;
+background-image: url(./img/plusLow.png);
+}
+.plus:hover{
+    background-image: url(./img/plusStrong.png);
+    cursor: pointer;
+}
+.minus{
+width: 20px;
+height: 20px;
+background-size: cover;
+background-image: url(./img/minusLow.png);
+}
+.minus:hover{
+    background-image: url(./img/minusStrong\ \(1\).png);
+    cursor: pointer;
+}
+.menuBasket {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+.none{
+    display: none;
+}
+.spaseLine{
+    height: 1px;
+    width: 90%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.paddingTop16{
+    padding-top: 16px;
+}
+.filingBasket{
+    flex-direction: column;
+}
+@media(max-width: 1000px){
+.menu p{
+    width: 400px;
+}
+.basket{
+    width: 344px;
+}
+}
+@media(max-width:820px){
+    .basket p{
+        font-size: 100%;
+    }
+    .basket h3{
+        font-size: 150%;
+    }
+    .basket{
+        width: 250px;
+    }
+}
+@media(max-width: 720px){
+    p{
+        font-size: 100%;
+    }
+    h1{
+        font-size: 150%;
+    }
+    h2{
+        font-size: 130%;
+    }
+    h3{
+        font-size: 120%;
+    }
+    .basket p{
+        font-size: 90%;
+    }
+    .basket h3{
+        font-size: 130%;
+    }
+    .menu p{
+        width: 200px;
+}
+}
+@media(max-width:600px){
+    .basket{
+        width: 200px;
+        overflow-y:scroll;height: 45vh;
+    }
+    .addMenu{
+        height: 80px;
+        width: 80px;
+    }
+    .addMenu img{
+        width: 32px;
+    }
+    .basket p{
+        font-size: 70%;
+    }
+    .basket h3{
+        font-size: 100%;
+    }
+
+}
+@media(max-width: 500px){
+    .menu{
+        gap: 0px;
+    }
+    .index {
+        padding-right: 32px;
+        padding-left: 32px;
+    }
+    .assessment{
+        flex-direction: column-reverse;
+        align-items: start;
+        gap: 0px;
+    }
+    .assessment img{
+        width: 56px;
+        height: 56px;
+    }
+    .basket{
+        width: 180px;
+        overflow-y: scroll;height: 45vh;
+    }
+    .menuBasket{
+        padding: 8px;
+        padding-left: 0px;
+    }
+    .price{
+        padding: 8px;
+}
+@media(max-width: 360px){
+    .addMenu{
+        height: 64px;
+        width: 64px;
+    }
+    .addMenu img{
+        width: 24px;
+    }
+    .menu p{
+        width: 168px;
+    }
+}
+}
